@@ -575,30 +575,22 @@ Wire Wire Line
 $Comp
 L Connector:Screw_Terminal_01x03 J12
 U 1 1 5E576D88
-P 8600 1150
-F 0 "J12" H 8550 1400 50  0000 L CNN
-F 1 "Screw_Terminal_01x03" H 8750 1400 50  0000 L CNN
-F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00288_1x03_P5.08mm_Horizontal" H 8600 1150 50  0001 C CNN
-F 3 "~" H 8600 1150 50  0001 C CNN
-	1    8600 1150
+P 8600 1350
+F 0 "J12" H 8550 1600 50  0000 L CNN
+F 1 "Screw_Terminal_01x03" H 8750 1600 50  0000 L CNN
+F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00288_1x03_P5.08mm_Horizontal" H 8600 1350 50  0001 C CNN
+F 3 "~" H 8600 1350 50  0001 C CNN
+	1    8600 1350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	7900 850  8200 850 
 Wire Wire Line
-	8200 850  8200 1150
-Wire Wire Line
-	8200 1150 8400 1150
-Wire Wire Line
-	7800 1450 8400 1450
-Wire Wire Line
-	8400 1450 8400 1250
-Wire Wire Line
 	7700 850  7700 750 
 Wire Wire Line
 	7700 750  8400 750 
 Wire Wire Line
-	8400 750  8400 1050
+	8400 750  8400 1250
 $Comp
 L Diode:1N4004 D1
 U 1 1 5E593BB3
@@ -1046,12 +1038,12 @@ $EndComp
 $Comp
 L power:+12V #PWR018
 U 1 1 5E5B5435
-P 8050 1800
-F 0 "#PWR018" H 8050 1650 50  0001 C CNN
-F 1 "+12V" H 8050 2000 50  0000 C CNN
-F 2 "" H 8050 1800 50  0001 C CNN
-F 3 "" H 8050 1800 50  0001 C CNN
-	1    8050 1800
+P 8300 2000
+F 0 "#PWR018" H 8300 1850 50  0001 C CNN
+F 1 "+12V" H 8300 2200 50  0000 C CNN
+F 2 "" H 8300 2000 50  0001 C CNN
+F 3 "" H 8300 2000 50  0001 C CNN
+	1    8300 2000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1080,11 +1072,7 @@ Wire Wire Line
 	7400 2850 7400 2800
 Wire Wire Line
 	7400 2800 7450 2800
-Wire Wire Line
-	6200 1850 6450 1850
 Connection ~ 7400 2800
-Wire Wire Line
-	8300 2050 8300 2200
 Text Notes 5800 6035 0    49   ~ 0
 1B
 Text Notes 5800 6140 0    49   ~ 0
@@ -1097,11 +1085,11 @@ Text Notes 5800 5285 0    49   ~ 0
 +12V
 Text Notes 5800 5390 0    49   ~ 0
 GND
-Text Notes 8700 1085 0    49   ~ 0
+Text Notes 8700 1300 0    49   ~ 0
 NC
-Text Notes 8700 1190 0    49   ~ 0
+Text Notes 8700 1500 0    49   ~ 0
 NO
-Text Notes 8700 1290 0    49   ~ 0
+Text Notes 8700 1400 0    49   ~ 0
 Common
 Text Notes 8705 4035 0    49   ~ 0
 Default 230V AC
@@ -1114,27 +1102,25 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x02 J22
 U 1 1 5E6404FC
-P 6000 2700
-F 0 "J22" H 5950 2800 50  0000 L CNN
-F 1 "Force output ON" H 5850 2500 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6000 2700 50  0001 C CNN
-F 3 "~" H 6000 2700 50  0001 C CNN
-	1    6000 2700
+P 6250 2350
+F 0 "J22" H 6200 2450 50  0000 L CNN
+F 1 "Force output ON" H 6100 2150 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6250 2350 50  0001 C CNN
+F 3 "~" H 6250 2350 50  0001 C CNN
+	1    6250 2350
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0110
 U 1 1 5E6923E9
-P 6200 3050
-F 0 "#PWR0110" H 6200 2800 50  0001 C CNN
-F 1 "GND" H 6205 2877 50  0000 C CNN
-F 2 "" H 6200 3050 50  0001 C CNN
-F 3 "" H 6200 3050 50  0001 C CNN
-	1    6200 3050
+P 6450 2450
+F 0 "#PWR0110" H 6450 2200 50  0001 C CNN
+F 1 "GND" H 6455 2277 50  0000 C CNN
+F 2 "" H 6450 2450 50  0001 C CNN
+F 3 "" H 6450 2450 50  0001 C CNN
+	1    6450 2450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6200 3050 6200 2800
 $Comp
 L Connector:Barrel_Jack_Switch J18
 U 1 1 5E612FDC
@@ -1182,18 +1168,12 @@ Connection ~ 8050 3200
 Wire Wire Line
 	8050 3200 8400 3200
 Wire Wire Line
-	8050 2050 8300 2050
-Wire Wire Line
-	8050 1800 8050 2050
-Wire Wire Line
 	6750 1450 6750 1850
 Wire Wire Line
-	6200 1850 6200 2350
+	6450 1850 6450 2350
 Wire Wire Line
-	7750 2350 6200 2350
-Connection ~ 6200 2350
-Wire Wire Line
-	6200 2350 6200 2700
+	7750 2350 6450 2350
+Connection ~ 6450 2350
 Wire Wire Line
 	6450 1250 6450 850 
 Wire Wire Line
@@ -1215,4 +1195,16 @@ Wire Wire Line
 	4000 5750 4000 6400
 Text Notes 8500 2850 0    50   ~ 0
 (12V buzzer, relay, door solenoid, anything)
+Wire Wire Line
+	8300 2000 8300 2200
+Wire Wire Line
+	8200 1450 8400 1450
+Wire Wire Line
+	8200 850  8200 1450
+Wire Wire Line
+	8400 1350 8100 1350
+Wire Wire Line
+	8100 1350 8100 1450
+Wire Wire Line
+	8100 1450 7800 1450
 $EndSCHEMATC

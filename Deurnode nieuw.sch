@@ -581,16 +581,10 @@ F 1 "Screw_Terminal_01x03" H 8750 1600 50  0000 L CNN
 F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00288_1x03_P5.08mm_Horizontal" H 8600 1350 50  0001 C CNN
 F 3 "~" H 8600 1350 50  0001 C CNN
 	1    8600 1350
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	7900 850  8200 850 
-Wire Wire Line
-	8200 850  8200 1350
-Wire Wire Line
-	8200 1350 8400 1350
-Wire Wire Line
-	7800 1450 8400 1450
 Wire Wire Line
 	7700 850  7700 750 
 Wire Wire Line
@@ -1091,11 +1085,11 @@ Text Notes 5800 5285 0    49   ~ 0
 +12V
 Text Notes 5800 5390 0    49   ~ 0
 GND
-Text Notes 8700 1085 0    49   ~ 0
+Text Notes 8700 1300 0    49   ~ 0
 NC
-Text Notes 8700 1190 0    49   ~ 0
+Text Notes 8700 1500 0    49   ~ 0
 NO
-Text Notes 8700 1290 0    49   ~ 0
+Text Notes 8700 1400 0    49   ~ 0
 Common
 Text Notes 8705 4035 0    49   ~ 0
 Default 230V AC
@@ -1203,4 +1197,14 @@ Text Notes 8500 2850 0    50   ~ 0
 (12V buzzer, relay, door solenoid, anything)
 Wire Wire Line
 	8300 2000 8300 2200
+Wire Wire Line
+	8200 1450 8400 1450
+Wire Wire Line
+	8200 850  8200 1450
+Wire Wire Line
+	8400 1350 8100 1350
+Wire Wire Line
+	8100 1350 8100 1450
+Wire Wire Line
+	8100 1450 7800 1450
 $EndSCHEMATC
