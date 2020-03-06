@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name IRFZ44N)(type Legacy)(uri ${KIPRJMOD}/Libs/IRFZ44N.lib)(options "")(descr ""))
   (lib (name PC814)(type Legacy)(uri ${KIPRJMOD}/Libs/PC814.lib)(options "")(descr ""))
+  (lib (name Deurnode-nieuw-rescue)(type Legacy)(uri "${KIPRJMOD}/Deurnode nieuw-rescue.lib")(options "")(descr ""))
 )
